@@ -1,0 +1,33 @@
+{
+  "id": "hello-world",
+  "name": "Hello world",
+  "version": "1.2.0",
+  "description": "A starter plugin: greets whoever is playing and counts their taps.",
+  "entry": "index.html",
+  "emoji": "👋",
+  "color": "#7ED9A6",
+  "categories": [
+    "Examples"
+  ],
+  "ages": {
+    "min": 3
+  },
+  "author": "Your name",
+  "homepage": "https://github.com/JohnDuprey/kinwall-plugin-hello-world",
+  "actions": {
+    "setTaps": {
+      "description": "Set this person's tap count.",
+      "input": {
+        "properties": {
+          "taps": {
+            "type": "number",
+            "description": "The new count, 0 or more"
+          }
+        },
+        "required": [
+          "taps"
+        ]
+      }
+    }
+  }
+}
