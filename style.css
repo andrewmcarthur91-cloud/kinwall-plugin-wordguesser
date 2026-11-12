@@ -120,6 +120,7 @@ h1 {
 }
 
 .keyboard-row {
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -140,8 +141,9 @@ h1 {
 }
 
 .key.wide {
-  flex: 1.5;
-  font-size: 0.75rem;
+  flex: 2;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .key:active { filter: brightness(0.9); }
