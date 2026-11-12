@@ -68,6 +68,7 @@ h1 {
 .board-row {
   display: grid;
   grid-template-columns: repeat(5, var(--tile-size));
+  justify-content: center;
   gap: var(--tile-gap);
 }
 
