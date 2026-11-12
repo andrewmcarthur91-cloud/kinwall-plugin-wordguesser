@@ -37,6 +37,11 @@ main {
   gap: 18px;
 }
 
+/* Keep the game screen stretched inside the centred main flex layout. */
+#game-screen {
+  width: 100%;
+}
+
 header { text-align: center; }
 
 h1 {
