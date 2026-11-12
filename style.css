@@ -119,6 +119,9 @@ h1 {
   margin-top: auto;
 }
 
+/* Improve keyboard layout in Kinwall's narrower plugin iframe:
+   stretch rows to full width and give Enter/Backspace more room
+   with larger, readable labels. */
 .keyboard-row {
   width: 100%;
   display: flex;
