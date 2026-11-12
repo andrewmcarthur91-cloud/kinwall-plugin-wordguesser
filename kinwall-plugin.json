@@ -1,33 +1,14 @@
 {
   "id": "hello-world",
-  "name": "Hello world",
-  "version": "1.2.0",
-  "description": "A starter plugin: greets whoever is playing and counts their taps.",
+  "name": "Wordguess",
+  "version": "1.3.0",
+  "description": "A daily five-letter word puzzle for the whole family. Play, track your statistics and compare scores.",
   "entry": "index.html",
-  "emoji": "👋",
-  "color": "#7ED9A6",
+  "emoji": "🔤",
+  "color": "#6AAA64",
   "categories": [
-    "Examples"
+    "Games"
   ],
-  "ages": {
-    "min": 3
-  },
-  "author": "Your name",
-  "homepage": "https://github.com/JohnDuprey/kinwall-plugin-hello-world",
-  "actions": {
-    "setTaps": {
-      "description": "Set this person's tap count.",
-      "input": {
-        "properties": {
-          "taps": {
-            "type": "number",
-            "description": "The new count, 0 or more"
-          }
-        },
-        "required": [
-          "taps"
-        ]
-      }
-    }
-  }
+  "author": "Andrew McArthur",
+  "homepage": "https://github.com/andrewmcarthur91-cloud/kinwall-plugin-wordguesser"
 }

@@ -3,21 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Hello world</title>
+  <meta name="theme-color" content="#6AAA64">
+  <title>Wordguess</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <h1 id="hello">Hello!</h1>
-    <p class="dim" id="who"></p>
-    <button class="big" id="tap">Tap me</button>
-    <button class="plain" id="say" aria-label="Say hello">🔊 Say hello</button>
-    <p id="count" aria-live="polite"></p>
-    <p class="dim" id="family"></p>
-    <button class="plain" id="reset">Start over</button>
+    <header>
+      <h1>Wordguess</h1>
+      <p class="subtitle" id="who">A daily word puzzle</p>
+    </header>
+
+    <section id="splash">
+      <button id="play-button" type="button" disabled>Guess today's word</button>
+      <p id="puzzle-status" class="puzzle-status" hidden></p>
+
+      <section id="statistics" aria-label="Your statistics">
+        <h2>Your statistics</h2>
+        <div class="stats-summary">
+          <div><strong id="stat-played">0</strong><span>Played</span></div>
+          <div><strong id="stat-wins">0</strong><span>Wins</span></div>
+          <div><strong id="stat-rate">0%</strong><span>Win rate</span></div>
+        </div>
+        <h3>Guess distribution</h3>
+        <div id="guess-distribution"></div>
+      </section>
+
+      <section id="family-leaderboard" aria-label="Family leaderboard">
+        <h2>Family leaderboard</h2>
+        <div id="family-rankings">
+          <p class="dim">Family results will appear here.</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="game-screen" hidden>
+      <section id="board" aria-label="Guess board">
+        <!-- Six rows of five tiles are created by app.js -->
+      </section>
+
+      <p id="message" role="status" aria-live="polite">Guess the five-letter word!</p>
+
+      <section id="keyboard" aria-label="On-screen keyboard">
+        <!-- Keyboard buttons are created by app.js -->
+      </section>
+
+      <footer>
+        <p class="dim" id="attempts">6 guesses</p>
+      </footer>
+    </section>
   </main>
-  <!-- Classic scripts, not type="module": see "Limits" in README.md. kinwall.js first. -->
+
+  <!-- Keep Kinwall's SDK first. Do not modify kinwall.js. -->
   <script src="kinwall.js"></script>
+  <script src="guesses.js"></script>
+  <script src="answers.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
